@@ -5,7 +5,7 @@ const getContact = (req, res) => {
 const createContact = (req, res) => {
     console.log("req.body", req.body);
     const { name, phone, email} = req.body;
-    if(!name || !phone ||!email){
+    if(!name || !phone || !email){
         res.status(400);
         throw new Error("All fields are mandatory man !")
     }
